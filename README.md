@@ -13,7 +13,7 @@ How to run the MSFSM (Multiple Synchronised FSMs) flow in MSFSMs tool:
 		per MSFSM
 	step 6: run write_scomponents_to_dot to produce .dot file illustrating the FSMs
 	     	correspondence, in terms of places, transitions on the original Petri Net
-        step 7: run write_fsms_to_petrify_format to write FSMs to individual .sg files
+	step 7: run write_fsms_to_petrify_format to write FSMs to individual .sg files
 	step 8: run draw_graph_dot TCL command to display the MSFSMs using graphviz/dotty
 
 Available TCL commands in MSFSMs tool:
