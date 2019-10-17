@@ -1,4 +1,4 @@
-# msfsms 2018-2019
+# msfsms tool
 
 How to run the MSFSM (Multiple Synchronised FSMs) flow in MSFSMs tool:
 
@@ -6,7 +6,7 @@ How to run the MSFSM (Multiple Synchronised FSMs) flow in MSFSMs tool:
 	step 2: run read_graph TCL command to read Petri Net structure into MSFSMs tool
 	step 3: run get_scover TCL command to obtain an S-cover, and obtain an array of
 	     	S-components, for the specified Petri Net
-	step 4: run fsm_collapsing TCL command, to obtain an array of MSFSMs; during
+	step 4: run fsm_collapse TCL command, to obtain an array of MSFSMs; during
 	     	this step, FSM mapping and state collapsing take place
 	step 5: run sync_fsm TCL command to obtain the final MSFSMs array, including
 	     	synchronisation between them; this command also generates verilog code
