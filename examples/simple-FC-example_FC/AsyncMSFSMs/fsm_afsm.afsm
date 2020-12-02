@@ -1,0 +1,33 @@
+### FSMs' Declaration ###
+
+### Begin of FSM#01 Declaration ###
+p3: t0_ t0__p9_FSM2_TB t0__p7_FSM3_TB t0__p6_FSM4_TB p0
+p2: t4_ p3
+p0*: t1_ p2
+p0*: t2_ p3
+### End of FSM #01 Declaration ###
+
+### FSMs' Declaration ###
+
+### Begin of FSM#02 Declaration ###
+p9: t0_ t0__p3_FSM1_TB t0__p7_FSM3_TB t0__p6_FSM4_TB p1
+p8: t7_ p9
+p1*: t3_ t3__p1_FSM3_TB t3__p1_FSM4_TB p8
+### End of FSM #02 Declaration ###
+
+### FSMs' Declaration ###
+
+### Begin of FSM#03 Declaration ###
+p1*: t3_ t3__p1_FSM2_TB t3__p1_FSM4_TB p5
+p7: t0_ t0__p3_FSM1_TB t0__p9_FSM2_TB t0__p6_FSM4_TB p1
+p5: t6_ p7
+### End of FSM #03 Declaration ###
+
+### FSMs' Declaration ###
+
+### Begin of FSM#04 Declaration ###
+p1*: t3_ t3__p1_FSM2_TB t3__p1_FSM3_TB p4
+p6: t0_ t0__p3_FSM1_TB t0__p9_FSM2_TB t0__p7_FSM3_TB p1
+p4: t5_ p6
+### End of FSM #04 Declaration ###
+

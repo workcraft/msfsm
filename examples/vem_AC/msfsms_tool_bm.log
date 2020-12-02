@@ -1,0 +1,432 @@
+---------------------------------------------------------------------------
+Benchmark: vem_AC/vem.petrinet.AC.workcraft.g
+---------------------------------------------------------------------------
+[MSFSMs Syntehsis Tool v1.00]%> read_graph /home/dvaliantzas/WORK/MSFSMs/Benchmarks/GitHub_Repo/vem_AC/vem.petrinet.AC.workcraft.g
+[1;2;34mINFO: Total Nodes       [0m: 34
+[1;2;34mINFO: Total Transitions [0m: 17
+[1;2;34mINFO: Total Places      [0m: 17
+[1;2;34mINFO: Total Edges       [0m: 38
+[1;2;34mINFO-TCL: Successfully loaded Petri-Net.
+[0m[MSFSMs Syntehsis Tool v1.00]%> list_petrinet
+PT-Net [0][0]: Label = p10, Type = Place (is Empty)
+		Predecessors: dsw_PLUS[6][0]
+		Successors: d_PLUS[2][0]
+PT-Net [1][0]: Label = dsr_PLUS, Type = Transition (is Input)
+		Predecessors: p1[20][0]
+		Successors: p0[21][0]
+PT-Net [2][0]: Label = d_PLUS, Type = Transition (is Output)
+		Predecessors: p10[0][0]
+		Successors: p11[33][0]
+PT-Net [2][1]: Label = ldtack_PLUSa, Type = Transition (is Input)
+		Predecessors: p12[32][0]
+		Successors: p13[31][0]
+PT-Net [3][0]: Label = lds_MINUS, Type = Transition (is Output)
+		Predecessors: p2[19][0], p11[33][0]
+		Successors: p12[32][0]
+PT-Net [3][1]: Label = d_PLUSa, Type = Transition (is Output)
+		Predecessors: p6[15][0]
+		Successors: p7[14][0]
+PT-Net [4][0]: Label = dtack_PLUSa, Type = Transition (is Output)
+		Predecessors: p14[30][0]
+		Successors: p15[29][0]
+PT-Net [6][0]: Label = dsw_PLUS, Type = Transition (is Input)
+		Predecessors: p1[20][0]
+		Successors: p10[0][0]
+PT-Net [11][0]: Label = dtack_PLUS, Type = Transition (is Output)
+		Predecessors: p7[14][0]
+		Successors: p8[13][1]
+PT-Net [12][0]: Label = p9, Type = Place (is Empty)
+		Predecessors: dsr_MINUS[27][0]
+		Successors: d_MINUSa[13][0]
+PT-Net [13][0]: Label = d_MINUSa, Type = Transition (is Input)
+		Predecessors: p9[12][0]
+		Successors: p3[18][0], p4[17][0]
+PT-Net [13][1]: Label = p8, Type = Place (is Empty)
+		Predecessors: dtack_PLUS[11][0]
+		Successors: dsr_MINUS[27][0]
+PT-Net [14][0]: Label = p7, Type = Place (is Empty)
+		Predecessors: d_PLUSa[3][1]
+		Successors: dtack_PLUS[11][0]
+PT-Net [15][0]: Label = p6, Type = Place (is Empty)
+		Predecessors: ldtack_PLUS[27][1]
+		Successors: d_PLUSa[3][1]
+PT-Net [16][0]: Label = p5, Type = Place (is Empty)
+		Predecessors: lds_PLUS[25][0]
+		Successors: ldtack_PLUS[27][1]
+PT-Net [17][0]: Label = p4, Type = Place (is Empty)
+		Predecessors: dsw_MINUS[22][0], d_MINUSa[13][0]
+		Successors: dtack_MINUS[27][2]
+PT-Net [18][0]: Label = p3, Type = Place (is Empty)
+		Predecessors: dsw_MINUS[22][0], d_MINUSa[13][0]
+		Successors: lds_MINUSa[22][1]
+PT-Net [19][0]: Label = p2, Type = Place (is Marked)
+		Predecessors: ldtack_MINUS[25][1]
+		Successors: lds_MINUS[3][0], lds_PLUS[25][0]
+PT-Net [20][0]: Label = p1, Type = Place (is Marked)
+		Predecessors: dtack_MINUS[27][2]
+		Successors: dsr_PLUS[1][0], dsw_PLUS[6][0]
+PT-Net [21][0]: Label = p0, Type = Place (is Empty)
+		Predecessors: dsr_PLUS[1][0]
+		Successors: lds_PLUS[25][0]
+PT-Net [22][0]: Label = dsw_MINUS, Type = Transition (is Input)
+		Predecessors: p15[29][0]
+		Successors: p3[18][0], p4[17][0]
+PT-Net [22][1]: Label = lds_MINUSa, Type = Transition (is Output)
+		Predecessors: p3[18][0]
+		Successors: p16[28][0]
+PT-Net [25][0]: Label = lds_PLUS, Type = Transition (is Output)
+		Predecessors: p2[19][0], p0[21][0]
+		Successors: p5[16][0]
+PT-Net [25][1]: Label = ldtack_MINUS, Type = Transition (is Input)
+		Predecessors: p16[28][0]
+		Successors: p2[19][0]
+PT-Net [26][0]: Label = d_MINUS, Type = Transition (is Output)
+		Predecessors: p13[31][0]
+		Successors: p14[30][0]
+PT-Net [27][0]: Label = dsr_MINUS, Type = Transition (is Input)
+		Predecessors: p8[13][1]
+		Successors: p9[12][0]
+PT-Net [27][1]: Label = ldtack_PLUS, Type = Transition (is Input)
+		Predecessors: p5[16][0]
+		Successors: p6[15][0]
+PT-Net [27][2]: Label = dtack_MINUS, Type = Transition (is Output)
+		Predecessors: p4[17][0]
+		Successors: p1[20][0]
+PT-Net [28][0]: Label = p16, Type = Place (is Empty)
+		Predecessors: lds_MINUSa[22][1]
+		Successors: ldtack_MINUS[25][1]
+PT-Net [29][0]: Label = p15, Type = Place (is Empty)
+		Predecessors: dtack_PLUSa[4][0]
+		Successors: dsw_MINUS[22][0]
+PT-Net [30][0]: Label = p14, Type = Place (is Empty)
+		Predecessors: d_MINUS[26][0]
+		Successors: dtack_PLUSa[4][0]
+PT-Net [31][0]: Label = p13, Type = Place (is Empty)
+		Predecessors: ldtack_PLUSa[2][1]
+		Successors: d_MINUS[26][0]
+PT-Net [32][0]: Label = p12, Type = Place (is Empty)
+		Predecessors: lds_MINUS[3][0]
+		Successors: ldtack_PLUSa[2][1]
+PT-Net [33][0]: Label = p11, Type = Place (is Empty)
+		Predecessors: d_PLUS[2][0]
+		Successors: lds_MINUS[3][0]
+
+[1;2;34mINFO-TCL: Successfully displayed Petri-Net.
+[0m[MSFSMs Syntehsis Tool v1.00]%> get_SC_Snets
+[1;2;34mINFO-TCL: Successfully extracted #2 Strongly Connected S-Nets.
+[0m[MSFSMs Syntehsis Tool v1.00]%> list_SC_Snet -all
+---  ---  ---  ---  ---  ---  ---  ---  ---  ---  ---  ---  ---  ---  ---  
+*** SC S-net #1, Total Nodes = 29, H-collapsed = 'false' ***
+SC S-net (1,1): p10[0][0]
+SC S-net (1,2): dsr_PLUS[1][0]
+		Predecessor Place: p1(1,17)[20,0]
+		Successor Place: p0(1,18)[21,0]
+SC S-net (1,3): d_PLUS[2][0]
+		Predecessor Place: p10(1,1)[0,0]
+		Successor Place: p11(1,29)[33,0]
+SC S-net (1,4): ldtack_PLUSa[2][1]
+		Predecessor Place: p12(1,28)[32,0]
+		Successor Place: p13(1,27)[31,0]
+SC S-net (1,5): lds_MINUS[3][0]
+		Predecessor Place: p11(1,29)[33,0]
+		Successor Place: p12(1,28)[32,0]
+SC S-net (1,6): d_PLUSa[3][1]
+		Predecessor Place: p6(1,14)[15,0]
+		Successor Place: p7(1,13)[14,0]
+SC S-net (1,7): dtack_PLUSa[4][0]
+		Predecessor Place: p14(1,26)[30,0]
+		Successor Place: p15(1,25)[29,0]
+SC S-net (1,8): dsw_PLUS[6][0]
+		Predecessor Place: p1(1,17)[20,0]
+		Successor Place: p10(1,1)[0,0]
+SC S-net (1,9): dtack_PLUS[11][0]
+		Predecessor Place: p7(1,13)[14,0]
+		Successor Place: p8(1,12)[13,1]
+SC S-net (1,10): p9[12][0]
+SC S-net (1,11): d_MINUSa[13][0]
+		Predecessor Place: p9(1,10)[12,0]
+		Successor Place: p4(1,16)[17,0]
+SC S-net (1,12): p8[13][1]
+SC S-net (1,13): p7[14][0]
+SC S-net (1,14): p6[15][0]
+SC S-net (1,15): p5[16][0]
+SC S-net (1,16): p4[17][0]
+SC S-net (1,17): p1[20][0]
+SC S-net (1,18): p0[21][0]
+SC S-net (1,19): dsw_MINUS[22][0]
+		Predecessor Place: p15(1,25)[29,0]
+		Successor Place: p4(1,16)[17,0]
+SC S-net (1,20): lds_PLUS[25][0]
+		Predecessor Place: p0(1,18)[21,0]
+		Successor Place: p5(1,15)[16,0]
+SC S-net (1,21): d_MINUS[26][0]
+		Predecessor Place: p13(1,27)[31,0]
+		Successor Place: p14(1,26)[30,0]
+SC S-net (1,22): dsr_MINUS[27][0]
+		Predecessor Place: p8(1,12)[13,1]
+		Successor Place: p9(1,10)[12,0]
+SC S-net (1,23): ldtack_PLUS[27][1]
+		Predecessor Place: p5(1,15)[16,0]
+		Successor Place: p6(1,14)[15,0]
+SC S-net (1,24): dtack_MINUS[27][2]
+		Predecessor Place: p4(1,16)[17,0]
+		Successor Place: p1(1,17)[20,0]
+SC S-net (1,25): p15[29][0]
+SC S-net (1,26): p14[30][0]
+SC S-net (1,27): p13[31][0]
+SC S-net (1,28): p12[32][0]
+SC S-net (1,29): p11[33][0]
+---  ---  ---  ---  ---  ---  ---  ---  ---  ---  ---  ---  ---  ---  ---  
+*** SC S-net #2, Total Nodes = 25, H-collapsed = 'false' ***
+SC S-net (2,1): ldtack_PLUSa[2][1]
+		Predecessor Place: p12(2,25)[32,0]
+		Successor Place: p13(2,24)[31,0]
+SC S-net (2,2): lds_MINUS[3][0]
+		Predecessor Place: p2(2,13)[19,0]
+		Successor Place: p12(2,25)[32,0]
+SC S-net (2,3): d_PLUSa[3][1]
+		Predecessor Place: p6(2,10)[15,0]
+		Successor Place: p7(2,9)[14,0]
+SC S-net (2,4): dtack_PLUSa[4][0]
+		Predecessor Place: p14(2,23)[30,0]
+		Successor Place: p15(2,22)[29,0]
+SC S-net (2,5): dtack_PLUS[11][0]
+		Predecessor Place: p7(2,9)[14,0]
+		Successor Place: p8(2,8)[13,1]
+SC S-net (2,6): p9[12][0]
+SC S-net (2,7): d_MINUSa[13][0]
+		Predecessor Place: p9(2,6)[12,0]
+		Successor Place: p3(2,12)[18,0]
+SC S-net (2,8): p8[13][1]
+SC S-net (2,9): p7[14][0]
+SC S-net (2,10): p6[15][0]
+SC S-net (2,11): p5[16][0]
+SC S-net (2,12): p3[18][0]
+SC S-net (2,13): p2[19][0]
+SC S-net (2,14): dsw_MINUS[22][0]
+		Predecessor Place: p15(2,22)[29,0]
+		Successor Place: p3(2,12)[18,0]
+SC S-net (2,15): lds_MINUSa[22][1]
+		Predecessor Place: p3(2,12)[18,0]
+		Successor Place: p16(2,21)[28,0]
+SC S-net (2,16): lds_PLUS[25][0]
+		Predecessor Place: p2(2,13)[19,0]
+		Successor Place: p5(2,11)[16,0]
+SC S-net (2,17): ldtack_MINUS[25][1]
+		Predecessor Place: p16(2,21)[28,0]
+		Successor Place: p2(2,13)[19,0]
+SC S-net (2,18): d_MINUS[26][0]
+		Predecessor Place: p13(2,24)[31,0]
+		Successor Place: p14(2,23)[30,0]
+SC S-net (2,19): dsr_MINUS[27][0]
+		Predecessor Place: p8(2,8)[13,1]
+		Successor Place: p9(2,6)[12,0]
+SC S-net (2,20): ldtack_PLUS[27][1]
+		Predecessor Place: p5(2,11)[16,0]
+		Successor Place: p6(2,10)[15,0]
+SC S-net (2,21): p16[28][0]
+SC S-net (2,22): p15[29][0]
+SC S-net (2,23): p14[30][0]
+SC S-net (2,24): p13[31][0]
+SC S-net (2,25): p12[32][0]
+---  ---  ---  ---  ---  ---  ---  ---  ---  ---  ---  ---  ---  ---  ---  
+
+[1;2;34mINFO-TCL: Successfully displayed all SC S-Nets.
+[0m[MSFSMs Syntehsis Tool v1.00]%> create_FSMs -hcollapse
+---  ---  ---  ---  ---  ---  ---  ---  ---  ---  ---  ---  ---  ---  ---  
+[1;2;34mINFO: Creation of FSM #1 (of #2 total).
+[0m---  ---  ---  ---  ---  ---  ---  ---  ---  ---  ---  ---  ---  ---  ---  
+[1;2;34mINFO: Creation of FSM #2 (of #2 total).
+[0m---  ---  ---  ---  ---  ---  ---  ---  ---  ---  ---  ---  ---  ---  ---  
+
+---  ---  ---  ---  ---  ---  ---  ---  ---  ---  ---  ---  ---  ---  ---  
+
+[1;2;34mINFO-TCL: Created FSMs and Horizontally Collapsed redundant FSMs.
+[0m[MSFSMs Syntehsis Tool v1.00]%> list_FSM -all
+---  ---  ---  ---  ---  ---  ---  ---  ---  ---  ---  ---  ---  ---  ---  
+*** FSM 1, Total list Entries = 29, H-Collapsed = 'false' ***
+FSM (1,1): Label = p10, Type = State (is Initially Inactive)
+		Successor(s): e/d_PLUS(0,3)
+		Predecessor(s): dsw_PLUS/(0,8)
+FSM (1,2): Label = dsr_PLUS/, Type = Trans. Function (is Input)
+		Successor(s): p0(0,18)
+		Predecessor(s): p1(0,17)
+FSM (1,3): Label = e/d_PLUS, Type = Trans. Function (is Output)
+		Successor(s): p11(0,29)
+		Predecessor(s): p10(0,1)
+FSM (1,4): Label = ldtack_PLUSa/, Type = Trans. Function (is Input)
+		Successor(s): p13(0,27)
+		Predecessor(s): p12(0,28)
+FSM (1,5): Label = e/lds_MINUS, Type = Trans. Function (is Output)
+		Successor(s): p12(0,28)
+		Predecessor(s): p11(0,29)
+FSM (1,6): Label = e/d_PLUSa, Type = Trans. Function (is Output)
+		Successor(s): p7(0,13)
+		Predecessor(s): p6(0,14)
+FSM (1,7): Label = e/dtack_PLUSa, Type = Trans. Function (is Output)
+		Successor(s): p15(0,25)
+		Predecessor(s): p14(0,26)
+FSM (1,8): Label = dsw_PLUS/, Type = Trans. Function (is Input)
+		Successor(s): p10(0,1)
+		Predecessor(s): p1(0,17)
+FSM (1,9): Label = e/dtack_PLUS, Type = Trans. Function (is Output)
+		Successor(s): p8(0,12)
+		Predecessor(s): p7(0,13)
+FSM (1,10): Label = p9, Type = State (is Initially Inactive)
+		Successor(s): d_MINUSa/(0,11)
+		Predecessor(s): dsr_MINUS/(0,22)
+FSM (1,11): Label = d_MINUSa/, Type = Trans. Function (is Input)
+		Successor(s): p4(0,16)
+		Predecessor(s): p9(0,10)
+FSM (1,12): Label = p8, Type = State (is Initially Inactive)
+		Successor(s): dsr_MINUS/(0,22)
+		Predecessor(s): e/dtack_PLUS(0,9)
+FSM (1,13): Label = p7, Type = State (is Initially Inactive)
+		Successor(s): e/dtack_PLUS(0,9)
+		Predecessor(s): e/d_PLUSa(0,6)
+FSM (1,14): Label = p6, Type = State (is Initially Inactive)
+		Successor(s): e/d_PLUSa(0,6)
+		Predecessor(s): ldtack_PLUS/(0,23)
+FSM (1,15): Label = p5, Type = State (is Initially Inactive)
+		Successor(s): ldtack_PLUS/(0,23)
+		Predecessor(s): e/lds_PLUS(0,20)
+FSM (1,16): Label = p4, Type = State (is Initially Inactive)
+		Successor(s): e/dtack_MINUS(0,24)
+		Predecessor(s): dsw_MINUS/(0,19) d_MINUSa/(0,11)
+FSM (1,17): Label = p1, Type = State (is Initially Active)
+		Successor(s): dsr_PLUS/(0,2) dsw_PLUS/(0,8)
+		Predecessor(s): e/dtack_MINUS(0,24)
+FSM (1,18): Label = p0, Type = State (is Initially Inactive)
+		Successor(s): e/lds_PLUS(0,20)
+		Predecessor(s): dsr_PLUS/(0,2)
+FSM (1,19): Label = dsw_MINUS/, Type = Trans. Function (is Input)
+		Successor(s): p4(0,16)
+		Predecessor(s): p15(0,25)
+FSM (1,20): Label = e/lds_PLUS, Type = Trans. Function (is Output)
+		Successor(s): p5(0,15)
+		Predecessor(s): p0(0,18)
+FSM (1,21): Label = e/d_MINUS, Type = Trans. Function (is Output)
+		Successor(s): p14(0,26)
+		Predecessor(s): p13(0,27)
+FSM (1,22): Label = dsr_MINUS/, Type = Trans. Function (is Input)
+		Successor(s): p9(0,10)
+		Predecessor(s): p8(0,12)
+FSM (1,23): Label = ldtack_PLUS/, Type = Trans. Function (is Input)
+		Successor(s): p6(0,14)
+		Predecessor(s): p5(0,15)
+FSM (1,24): Label = e/dtack_MINUS, Type = Trans. Function (is Output)
+		Successor(s): p1(0,17)
+		Predecessor(s): p4(0,16)
+FSM (1,25): Label = p15, Type = State (is Initially Inactive)
+		Successor(s): dsw_MINUS/(0,19)
+		Predecessor(s): e/dtack_PLUSa(0,7)
+FSM (1,26): Label = p14, Type = State (is Initially Inactive)
+		Successor(s): e/dtack_PLUSa(0,7)
+		Predecessor(s): e/d_MINUS(0,21)
+FSM (1,27): Label = p13, Type = State (is Initially Inactive)
+		Successor(s): e/d_MINUS(0,21)
+		Predecessor(s): ldtack_PLUSa/(0,4)
+FSM (1,28): Label = p12, Type = State (is Initially Inactive)
+		Successor(s): ldtack_PLUSa/(0,4)
+		Predecessor(s): e/lds_MINUS(0,5)
+FSM (1,29): Label = p11, Type = State (is Initially Inactive)
+		Successor(s): e/lds_MINUS(0,5)
+		Predecessor(s): e/d_PLUS(0,3)
+---  ---  ---  ---  ---  ---  ---  ---  ---  ---  ---  ---  ---  ---  ---  
+*** FSM 2, Total list Entries = 25, H-Collapsed = 'false' ***
+FSM (2,1): Label = ldtack_PLUSa/, Type = Trans. Function (is Input)
+		Successor(s): p13(1,24)
+		Predecessor(s): p12(1,25)
+FSM (2,2): Label = e/lds_MINUS, Type = Trans. Function (is Output)
+		Successor(s): p12(1,25)
+		Predecessor(s): p2(1,13)
+FSM (2,3): Label = e/d_PLUSa, Type = Trans. Function (is Output)
+		Successor(s): p7(1,9)
+		Predecessor(s): p6(1,10)
+FSM (2,4): Label = e/dtack_PLUSa, Type = Trans. Function (is Output)
+		Successor(s): p15(1,22)
+		Predecessor(s): p14(1,23)
+FSM (2,5): Label = e/dtack_PLUS, Type = Trans. Function (is Output)
+		Successor(s): p8(1,8)
+		Predecessor(s): p7(1,9)
+FSM (2,6): Label = p9, Type = State (is Initially Inactive)
+		Successor(s): d_MINUSa/(1,7)
+		Predecessor(s): dsr_MINUS/(1,19)
+FSM (2,7): Label = d_MINUSa/, Type = Trans. Function (is Input)
+		Successor(s): p3(1,12)
+		Predecessor(s): p9(1,6)
+FSM (2,8): Label = p8, Type = State (is Initially Inactive)
+		Successor(s): dsr_MINUS/(1,19)
+		Predecessor(s): e/dtack_PLUS(1,5)
+FSM (2,9): Label = p7, Type = State (is Initially Inactive)
+		Successor(s): e/dtack_PLUS(1,5)
+		Predecessor(s): e/d_PLUSa(1,3)
+FSM (2,10): Label = p6, Type = State (is Initially Inactive)
+		Successor(s): e/d_PLUSa(1,3)
+		Predecessor(s): ldtack_PLUS/(1,20)
+FSM (2,11): Label = p5, Type = State (is Initially Inactive)
+		Successor(s): ldtack_PLUS/(1,20)
+		Predecessor(s): e/lds_PLUS(1,16)
+FSM (2,12): Label = p3, Type = State (is Initially Inactive)
+		Successor(s): e/lds_MINUSa(1,15)
+		Predecessor(s): dsw_MINUS/(1,14) d_MINUSa/(1,7)
+FSM (2,13): Label = p2, Type = State (is Initially Active)
+		Successor(s): e/lds_MINUS(1,2) e/lds_PLUS(1,16)
+		Predecessor(s): ldtack_MINUS/(1,17)
+FSM (2,14): Label = dsw_MINUS/, Type = Trans. Function (is Input)
+		Successor(s): p3(1,12)
+		Predecessor(s): p15(1,22)
+FSM (2,15): Label = e/lds_MINUSa, Type = Trans. Function (is Output)
+		Successor(s): p16(1,21)
+		Predecessor(s): p3(1,12)
+FSM (2,16): Label = e/lds_PLUS, Type = Trans. Function (is Output)
+		Successor(s): p5(1,11)
+		Predecessor(s): p2(1,13)
+FSM (2,17): Label = ldtack_MINUS/, Type = Trans. Function (is Input)
+		Successor(s): p2(1,13)
+		Predecessor(s): p16(1,21)
+FSM (2,18): Label = e/d_MINUS, Type = Trans. Function (is Output)
+		Successor(s): p14(1,23)
+		Predecessor(s): p13(1,24)
+FSM (2,19): Label = dsr_MINUS/, Type = Trans. Function (is Input)
+		Successor(s): p9(1,6)
+		Predecessor(s): p8(1,8)
+FSM (2,20): Label = ldtack_PLUS/, Type = Trans. Function (is Input)
+		Successor(s): p6(1,10)
+		Predecessor(s): p5(1,11)
+FSM (2,21): Label = p16, Type = State (is Initially Inactive)
+		Successor(s): ldtack_MINUS/(1,17)
+		Predecessor(s): e/lds_MINUSa(1,15)
+FSM (2,22): Label = p15, Type = State (is Initially Inactive)
+		Successor(s): dsw_MINUS/(1,14)
+		Predecessor(s): e/dtack_PLUSa(1,4)
+FSM (2,23): Label = p14, Type = State (is Initially Inactive)
+		Successor(s): e/dtack_PLUSa(1,4)
+		Predecessor(s): e/d_MINUS(1,18)
+FSM (2,24): Label = p13, Type = State (is Initially Inactive)
+		Successor(s): e/d_MINUS(1,18)
+		Predecessor(s): ldtack_PLUSa/(1,1)
+FSM (2,25): Label = p12, Type = State (is Initially Inactive)
+		Successor(s): ldtack_PLUSa/(1,1)
+		Predecessor(s): e/lds_MINUS(1,2)
+---  ---  ---  ---  ---  ---  ---  ---  ---  ---  ---  ---  ---  ---  ---  
+[1;2;34mINFO-TCL: Successfully displayed all FSMs.
+[0m[MSFSMs Syntehsis Tool v1.00]%> synchronise_FSMs
+[1;2;34mINFO-TCL: Successfully Synchronised FSMs.
+[0m[MSFSMs Syntehsis Tool v1.00]%> write_MSFSMs -format afsm_format -dlatchimplementation clk EN data D
+WARNING: FSM(1) produces multiple(2) active states
+WARNING: FSM(1) produces multiple(2) active states
+WARNING: FSM(1) produces multiple(2) active states
+WARNING: FSM(1) produces multiple(2) active states
+WARNING: FSM(1) produces multiple(2) active states
+WARNING: FSM(1) produces multiple(2) active states
+WARNING: FSM(1) produces multiple(2) active states
+WARNING: FSM(1) produces multiple(2) active states
+[1;2;34mINFO-TCL: FSMs Verilog Code generated for "-format afsm_format".
+[0m[MSFSMs Syntehsis Tool v1.00]%> write_MSFSMs -format syncmealy_behav
+WARNING: FSM(1) produces multiple(2) active states
+[1;2;34mINFO-TCL: FSMs Verilog Code generated for "-format syncmealy_behav".
+[0m[MSFSMs Syntehsis Tool v1.00]%> write_MSFSMs -format syncmealy_synth
+WARNING: FSM(1) produces multiple(2) active states
+[1;2;34mINFO-TCL: FSMs Verilog Code generated for "-format syncmealy_synth".
+[0m[MSFSMs Syntehsis Tool v1.00]%> quit

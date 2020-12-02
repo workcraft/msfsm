@@ -1,0 +1,38 @@
+### FSMs' Declaration ###
+
+### Begin of FSM#01 Declaration ###
+p9: e_Ao_MINUS e_Ao_MINUS_p1_FSM3_TB p2
+p4: e_Ro_MINUS e_Ro_MINUS_p4_FSM2_TB e_Ro_MINUS_p10_FSM4_TB p9
+p7*: e_Ro_PLUS e_Ro_PLUS_p6_FSM2_TB e_Ro_PLUS_p7_FSM3_TB e_Ro_PLUS_p6_FSM4_TB p3
+p3: Ai_PLUS_ Ai_PLUS__p3_FSM2_TB p4
+p2: Ri_PLUS_ Ri_PLUS__p2_FSM3_TB p7
+### End of FSM #01 Declaration ###
+
+### FSMs' Declaration ###
+
+### Begin of FSM#02 Declaration ###
+p5: Ai_MINUS_ Ai_MINUS__p5_FSM4_TB p6
+p4: e_Ro_MINUS e_Ro_MINUS_p4_FSM1_TB e_Ro_MINUS_p10_FSM4_TB p5
+p3: Ai_PLUS_ Ai_PLUS__p3_FSM1_TB p4
+p6*: e_Ro_PLUS e_Ro_PLUS_p7_FSM1_TB e_Ro_PLUS_p7_FSM3_TB e_Ro_PLUS_p6_FSM4_TB p3
+### End of FSM #02 Declaration ###
+
+### FSMs' Declaration ###
+
+### Begin of FSM#03 Declaration ###
+p1: e_Ao_MINUS e_Ao_MINUS_p9_FSM1_TB p2
+p8: e_Ao_PLUS e_Ao_PLUS_p8_FSM4_TB p0
+p0: Ri_MINUS_ p1
+p7*: e_Ro_PLUS e_Ro_PLUS_p7_FSM1_TB e_Ro_PLUS_p6_FSM2_TB e_Ro_PLUS_p6_FSM4_TB p8
+p2: Ri_PLUS_ Ri_PLUS__p2_FSM1_TB p7
+### End of FSM #03 Declaration ###
+
+### FSMs' Declaration ###
+
+### Begin of FSM#04 Declaration ###
+p5: Ai_MINUS_ Ai_MINUS__p5_FSM2_TB p6
+p8: e_Ao_PLUS e_Ao_PLUS_p8_FSM3_TB p10
+p10: e_Ro_MINUS e_Ro_MINUS_p4_FSM1_TB e_Ro_MINUS_p4_FSM2_TB p5
+p6*: e_Ro_PLUS e_Ro_PLUS_p7_FSM1_TB e_Ro_PLUS_p6_FSM2_TB e_Ro_PLUS_p7_FSM3_TB p8
+### End of FSM #04 Declaration ###
+

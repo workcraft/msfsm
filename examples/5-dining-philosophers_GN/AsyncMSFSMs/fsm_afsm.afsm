@@ -1,0 +1,15 @@
+### FSMs' Declaration ###
+
+### Begin of FSM#01 Declaration ###
+p7*: t6_ p8
+p4*: t5_ p5
+p1*: t0_ p2
+p9: t8_ p0
+p6: t7_ p7
+p3: t2_ p4
+p0: t1_ p1
+p8: t9_ p9
+p5: t4_ p6
+p2: t3_ p3
+### End of FSM #01 Declaration ###
+

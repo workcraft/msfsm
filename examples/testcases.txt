@@ -1,0 +1,10 @@
+5-dining-philosophers_GN/5-dining-philosophers.petrinet.GN.workcraft.g
+and-gate_GN/and-gate.petrinet.GN.workcraft.g
+converta_MG/converta.petrinet.MG.workcraft.g
+half_MG/half.petrinet.MG.workcraft.g
+nowick_MG/nowick.petrinet.MG.workcraft.g
+simple-EFC-example_EFC/simple-EFC-example.petrinet.EFC.workcraft.g
+simple-FC-example_FC/simple-FC-example.petrinet.FC.workcraft.g
+toggle_AC/toggle.petrinet.AC.workcraft.g
+vem_AC/vem.petrinet.AC.workcraft.g
+xor-gate_GN/xor-gate.pterinet.GN.workcraft.g

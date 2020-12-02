@@ -1,0 +1,297 @@
+---------------------------------------------------------------------------
+Benchmark: half_MG/half.petrinet.MG.workcraft.g
+---------------------------------------------------------------------------
+[MSFSMs Syntehsis Tool v1.00]%> read_graph /home/dvaliantzas/WORK/MSFSMs/Benchmarks/GitHub_Repo/half_MG/half.petrinet.MG.workcraft.g
+[1;2;34mINFO: Total Nodes       [0m: 19
+[1;2;34mINFO: Total Transitions [0m: 8
+[1;2;34mINFO: Total Places      [0m: 11
+[1;2;34mINFO: Total Edges       [0m: 22
+[1;2;34mINFO-TCL: Successfully loaded Petri-Net.
+[0m[MSFSMs Syntehsis Tool v1.00]%> list_petrinet
+PT-Net [1][0]: Label = Ri_PLUS, Type = Transition (is Input)
+		Predecessors: p2[17][0]
+		Successors: p7[11][2]
+PT-Net [1][1]: Label = p9, Type = Place (is Empty)
+		Predecessors: Ro_MINUS[5][1]
+		Successors: Ao_MINUS[13][0]
+PT-Net [2][0]: Label = p5, Type = Place (is Empty)
+		Predecessors: Ro_MINUS[5][1]
+		Successors: Ai_MINUS[14][0]
+PT-Net [3][0]: Label = p1, Type = Place (is Empty)
+		Predecessors: Ri_MINUS[6][0]
+		Successors: Ao_MINUS[13][0]
+PT-Net [5][0]: Label = Ro_PLUS, Type = Transition (is Output)
+		Predecessors: p6[16][0], p7[11][2]
+		Successors: p3[12][0], p8[6][1]
+PT-Net [5][1]: Label = Ro_MINUS, Type = Transition (is Output)
+		Predecessors: p4[7][1], p10[11][1]
+		Successors: p5[2][0], p9[1][1]
+PT-Net [6][0]: Label = Ri_MINUS, Type = Transition (is Input)
+		Predecessors: p0[8][0]
+		Successors: p1[3][0]
+PT-Net [6][1]: Label = p8, Type = Place (is Empty)
+		Predecessors: Ro_PLUS[5][0]
+		Successors: Ao_PLUS[11][0]
+PT-Net [7][0]: Label = Ai_PLUS, Type = Transition (is Input)
+		Predecessors: p3[12][0]
+		Successors: p4[7][1]
+PT-Net [7][1]: Label = p4, Type = Place (is Empty)
+		Predecessors: Ai_PLUS[7][0]
+		Successors: Ro_MINUS[5][1]
+PT-Net [8][0]: Label = p0, Type = Place (is Empty)
+		Predecessors: Ao_PLUS[11][0]
+		Successors: Ri_MINUS[6][0]
+PT-Net [11][0]: Label = Ao_PLUS, Type = Transition (is Output)
+		Predecessors: p8[6][1]
+		Successors: p0[8][0], p10[11][1]
+PT-Net [11][1]: Label = p10, Type = Place (is Empty)
+		Predecessors: Ao_PLUS[11][0]
+		Successors: Ro_MINUS[5][1]
+PT-Net [11][2]: Label = p7, Type = Place (is Marked)
+		Predecessors: Ri_PLUS[1][0]
+		Successors: Ro_PLUS[5][0]
+PT-Net [12][0]: Label = p3, Type = Place (is Empty)
+		Predecessors: Ro_PLUS[5][0]
+		Successors: Ai_PLUS[7][0]
+PT-Net [13][0]: Label = Ao_MINUS, Type = Transition (is Output)
+		Predecessors: p1[3][0], p9[1][1]
+		Successors: p2[17][0]
+PT-Net [14][0]: Label = Ai_MINUS, Type = Transition (is Input)
+		Predecessors: p5[2][0]
+		Successors: p6[16][0]
+PT-Net [16][0]: Label = p6, Type = Place (is Marked)
+		Predecessors: Ai_MINUS[14][0]
+		Successors: Ro_PLUS[5][0]
+PT-Net [17][0]: Label = p2, Type = Place (is Empty)
+		Predecessors: Ao_MINUS[13][0]
+		Successors: Ri_PLUS[1][0]
+
+[1;2;34mINFO-TCL: Successfully displayed Petri-Net.
+[0m[MSFSMs Syntehsis Tool v1.00]%> get_SC_Snets
+[1;2;34mINFO-TCL: Successfully extracted #4 Strongly Connected S-Nets.
+[0m[MSFSMs Syntehsis Tool v1.00]%> list_SC_Snet -all
+---  ---  ---  ---  ---  ---  ---  ---  ---  ---  ---  ---  ---  ---  ---  
+*** SC S-net #1, Total Nodes = 10, H-collapsed = 'false' ***
+SC S-net (1,1): Ri_PLUS[1][0]
+		Predecessor Place: p2(1,10)[17,0]
+		Successor Place: p7(1,7)[11,2]
+SC S-net (1,2): p9[1][1]
+SC S-net (1,3): Ro_PLUS[5][0]
+		Predecessor Place: p7(1,7)[11,2]
+		Successor Place: p3(1,8)[12,0]
+SC S-net (1,4): Ro_MINUS[5][1]
+		Predecessor Place: p4(1,6)[7,1]
+		Successor Place: p9(1,2)[1,1]
+SC S-net (1,5): Ai_PLUS[7][0]
+		Predecessor Place: p3(1,8)[12,0]
+		Successor Place: p4(1,6)[7,1]
+SC S-net (1,6): p4[7][1]
+SC S-net (1,7): p7[11][2]
+SC S-net (1,8): p3[12][0]
+SC S-net (1,9): Ao_MINUS[13][0]
+		Predecessor Place: p9(1,2)[1,1]
+		Successor Place: p2(1,10)[17,0]
+SC S-net (1,10): p2[17][0]
+---  ---  ---  ---  ---  ---  ---  ---  ---  ---  ---  ---  ---  ---  ---  
+*** SC S-net #2, Total Nodes = 8, H-collapsed = 'false' ***
+SC S-net (2,1): p5[2][0]
+SC S-net (2,2): Ro_PLUS[5][0]
+		Predecessor Place: p6(2,8)[16,0]
+		Successor Place: p3(2,6)[12,0]
+SC S-net (2,3): Ro_MINUS[5][1]
+		Predecessor Place: p4(2,5)[7,1]
+		Successor Place: p5(2,1)[2,0]
+SC S-net (2,4): Ai_PLUS[7][0]
+		Predecessor Place: p3(2,6)[12,0]
+		Successor Place: p4(2,5)[7,1]
+SC S-net (2,5): p4[7][1]
+SC S-net (2,6): p3[12][0]
+SC S-net (2,7): Ai_MINUS[14][0]
+		Predecessor Place: p5(2,1)[2,0]
+		Successor Place: p6(2,8)[16,0]
+SC S-net (2,8): p6[16][0]
+---  ---  ---  ---  ---  ---  ---  ---  ---  ---  ---  ---  ---  ---  ---  
+*** SC S-net #3, Total Nodes = 10, H-collapsed = 'false' ***
+SC S-net (3,1): Ri_PLUS[1][0]
+		Predecessor Place: p2(3,10)[17,0]
+		Successor Place: p7(3,8)[11,2]
+SC S-net (3,2): p1[3][0]
+SC S-net (3,3): Ro_PLUS[5][0]
+		Predecessor Place: p7(3,8)[11,2]
+		Successor Place: p8(3,5)[6,1]
+SC S-net (3,4): Ri_MINUS[6][0]
+		Predecessor Place: p0(3,6)[8,0]
+		Successor Place: p1(3,2)[3,0]
+SC S-net (3,5): p8[6][1]
+SC S-net (3,6): p0[8][0]
+SC S-net (3,7): Ao_PLUS[11][0]
+		Predecessor Place: p8(3,5)[6,1]
+		Successor Place: p0(3,6)[8,0]
+SC S-net (3,8): p7[11][2]
+SC S-net (3,9): Ao_MINUS[13][0]
+		Predecessor Place: p1(3,2)[3,0]
+		Successor Place: p2(3,10)[17,0]
+SC S-net (3,10): p2[17][0]
+---  ---  ---  ---  ---  ---  ---  ---  ---  ---  ---  ---  ---  ---  ---  
+*** SC S-net #4, Total Nodes = 8, H-collapsed = 'false' ***
+SC S-net (4,1): p5[2][0]
+SC S-net (4,2): Ro_PLUS[5][0]
+		Predecessor Place: p6(4,8)[16,0]
+		Successor Place: p8(4,4)[6,1]
+SC S-net (4,3): Ro_MINUS[5][1]
+		Predecessor Place: p10(4,6)[11,1]
+		Successor Place: p5(4,1)[2,0]
+SC S-net (4,4): p8[6][1]
+SC S-net (4,5): Ao_PLUS[11][0]
+		Predecessor Place: p8(4,4)[6,1]
+		Successor Place: p10(4,6)[11,1]
+SC S-net (4,6): p10[11][1]
+SC S-net (4,7): Ai_MINUS[14][0]
+		Predecessor Place: p5(4,1)[2,0]
+		Successor Place: p6(4,8)[16,0]
+SC S-net (4,8): p6[16][0]
+---  ---  ---  ---  ---  ---  ---  ---  ---  ---  ---  ---  ---  ---  ---  
+
+[1;2;34mINFO-TCL: Successfully displayed all SC S-Nets.
+[0m[MSFSMs Syntehsis Tool v1.00]%> create_FSMs -hcollapse
+---  ---  ---  ---  ---  ---  ---  ---  ---  ---  ---  ---  ---  ---  ---  
+[1;2;34mINFO: Creation of FSM #1 (of #4 total).
+[0m---  ---  ---  ---  ---  ---  ---  ---  ---  ---  ---  ---  ---  ---  ---  
+[1;2;34mINFO: Creation of FSM #2 (of #4 total).
+[0m---  ---  ---  ---  ---  ---  ---  ---  ---  ---  ---  ---  ---  ---  ---  
+[1;2;34mINFO: Creation of FSM #3 (of #4 total).
+[0m---  ---  ---  ---  ---  ---  ---  ---  ---  ---  ---  ---  ---  ---  ---  
+[1;2;34mINFO: Creation of FSM #4 (of #4 total).
+[0m---  ---  ---  ---  ---  ---  ---  ---  ---  ---  ---  ---  ---  ---  ---  
+
+---  ---  ---  ---  ---  ---  ---  ---  ---  ---  ---  ---  ---  ---  ---  
+
+[1;2;34mINFO-TCL: Created FSMs and Horizontally Collapsed redundant FSMs.
+[0m[MSFSMs Syntehsis Tool v1.00]%> list_FSM -all
+---  ---  ---  ---  ---  ---  ---  ---  ---  ---  ---  ---  ---  ---  ---  
+*** FSM 1, Total list Entries = 10, H-Collapsed = 'false' ***
+FSM (1,1): Label = Ri_PLUS/, Type = Trans. Function (is Input)
+		Successor(s): p7(0,7)
+		Predecessor(s): p2(0,10)
+FSM (1,2): Label = p9, Type = State (is Initially Inactive)
+		Successor(s): e/Ao_MINUS(0,9)
+		Predecessor(s): e/Ro_MINUS(0,4)
+FSM (1,3): Label = e/Ro_PLUS, Type = Trans. Function (is Output)
+		Successor(s): p3(0,8)
+		Predecessor(s): p7(0,7)
+FSM (1,4): Label = e/Ro_MINUS, Type = Trans. Function (is Output)
+		Successor(s): p9(0,2)
+		Predecessor(s): p4(0,6)
+FSM (1,5): Label = Ai_PLUS/, Type = Trans. Function (is Input)
+		Successor(s): p4(0,6)
+		Predecessor(s): p3(0,8)
+FSM (1,6): Label = p4, Type = State (is Initially Inactive)
+		Successor(s): e/Ro_MINUS(0,4)
+		Predecessor(s): Ai_PLUS/(0,5)
+FSM (1,7): Label = p7, Type = State (is Initially Active)
+		Successor(s): e/Ro_PLUS(0,3)
+		Predecessor(s): Ri_PLUS/(0,1)
+FSM (1,8): Label = p3, Type = State (is Initially Inactive)
+		Successor(s): Ai_PLUS/(0,5)
+		Predecessor(s): e/Ro_PLUS(0,3)
+FSM (1,9): Label = e/Ao_MINUS, Type = Trans. Function (is Output)
+		Successor(s): p2(0,10)
+		Predecessor(s): p9(0,2)
+FSM (1,10): Label = p2, Type = State (is Initially Inactive)
+		Successor(s): Ri_PLUS/(0,1)
+		Predecessor(s): e/Ao_MINUS(0,9)
+---  ---  ---  ---  ---  ---  ---  ---  ---  ---  ---  ---  ---  ---  ---  
+*** FSM 2, Total list Entries = 8, H-Collapsed = 'false' ***
+FSM (2,1): Label = p5, Type = State (is Initially Inactive)
+		Successor(s): Ai_MINUS/(1,7)
+		Predecessor(s): e/Ro_MINUS(1,3)
+FSM (2,2): Label = e/Ro_PLUS, Type = Trans. Function (is Output)
+		Successor(s): p3(1,6)
+		Predecessor(s): p6(1,8)
+FSM (2,3): Label = e/Ro_MINUS, Type = Trans. Function (is Output)
+		Successor(s): p5(1,1)
+		Predecessor(s): p4(1,5)
+FSM (2,4): Label = Ai_PLUS/, Type = Trans. Function (is Input)
+		Successor(s): p4(1,5)
+		Predecessor(s): p3(1,6)
+FSM (2,5): Label = p4, Type = State (is Initially Inactive)
+		Successor(s): e/Ro_MINUS(1,3)
+		Predecessor(s): Ai_PLUS/(1,4)
+FSM (2,6): Label = p3, Type = State (is Initially Inactive)
+		Successor(s): Ai_PLUS/(1,4)
+		Predecessor(s): e/Ro_PLUS(1,2)
+FSM (2,7): Label = Ai_MINUS/, Type = Trans. Function (is Input)
+		Successor(s): p6(1,8)
+		Predecessor(s): p5(1,1)
+FSM (2,8): Label = p6, Type = State (is Initially Active)
+		Successor(s): e/Ro_PLUS(1,2)
+		Predecessor(s): Ai_MINUS/(1,7)
+---  ---  ---  ---  ---  ---  ---  ---  ---  ---  ---  ---  ---  ---  ---  
+*** FSM 3, Total list Entries = 10, H-Collapsed = 'false' ***
+FSM (3,1): Label = Ri_PLUS/, Type = Trans. Function (is Input)
+		Successor(s): p7(2,8)
+		Predecessor(s): p2(2,10)
+FSM (3,2): Label = p1, Type = State (is Initially Inactive)
+		Successor(s): e/Ao_MINUS(2,9)
+		Predecessor(s): Ri_MINUS/(2,4)
+FSM (3,3): Label = e/Ro_PLUS, Type = Trans. Function (is Output)
+		Successor(s): p8(2,5)
+		Predecessor(s): p7(2,8)
+FSM (3,4): Label = Ri_MINUS/, Type = Trans. Function (is Input)
+		Successor(s): p1(2,2)
+		Predecessor(s): p0(2,6)
+FSM (3,5): Label = p8, Type = State (is Initially Inactive)
+		Successor(s): e/Ao_PLUS(2,7)
+		Predecessor(s): e/Ro_PLUS(2,3)
+FSM (3,6): Label = p0, Type = State (is Initially Inactive)
+		Successor(s): Ri_MINUS/(2,4)
+		Predecessor(s): e/Ao_PLUS(2,7)
+FSM (3,7): Label = e/Ao_PLUS, Type = Trans. Function (is Output)
+		Successor(s): p0(2,6)
+		Predecessor(s): p8(2,5)
+FSM (3,8): Label = p7, Type = State (is Initially Active)
+		Successor(s): e/Ro_PLUS(2,3)
+		Predecessor(s): Ri_PLUS/(2,1)
+FSM (3,9): Label = e/Ao_MINUS, Type = Trans. Function (is Output)
+		Successor(s): p2(2,10)
+		Predecessor(s): p1(2,2)
+FSM (3,10): Label = p2, Type = State (is Initially Inactive)
+		Successor(s): Ri_PLUS/(2,1)
+		Predecessor(s): e/Ao_MINUS(2,9)
+---  ---  ---  ---  ---  ---  ---  ---  ---  ---  ---  ---  ---  ---  ---  
+*** FSM 4, Total list Entries = 8, H-Collapsed = 'false' ***
+FSM (4,1): Label = p5, Type = State (is Initially Inactive)
+		Successor(s): Ai_MINUS/(3,7)
+		Predecessor(s): e/Ro_MINUS(3,3)
+FSM (4,2): Label = e/Ro_PLUS, Type = Trans. Function (is Output)
+		Successor(s): p8(3,4)
+		Predecessor(s): p6(3,8)
+FSM (4,3): Label = e/Ro_MINUS, Type = Trans. Function (is Output)
+		Successor(s): p5(3,1)
+		Predecessor(s): p10(3,6)
+FSM (4,4): Label = p8, Type = State (is Initially Inactive)
+		Successor(s): e/Ao_PLUS(3,5)
+		Predecessor(s): e/Ro_PLUS(3,2)
+FSM (4,5): Label = e/Ao_PLUS, Type = Trans. Function (is Output)
+		Successor(s): p10(3,6)
+		Predecessor(s): p8(3,4)
+FSM (4,6): Label = p10, Type = State (is Initially Inactive)
+		Successor(s): e/Ro_MINUS(3,3)
+		Predecessor(s): e/Ao_PLUS(3,5)
+FSM (4,7): Label = Ai_MINUS/, Type = Trans. Function (is Input)
+		Successor(s): p6(3,8)
+		Predecessor(s): p5(3,1)
+FSM (4,8): Label = p6, Type = State (is Initially Active)
+		Successor(s): e/Ro_PLUS(3,2)
+		Predecessor(s): Ai_MINUS/(3,7)
+---  ---  ---  ---  ---  ---  ---  ---  ---  ---  ---  ---  ---  ---  ---  
+[1;2;34mINFO-TCL: Successfully displayed all FSMs.
+[0m[MSFSMs Syntehsis Tool v1.00]%> synchronise_FSMs
+[1;2;34mINFO-TCL: Successfully Synchronised FSMs.
+[0m[MSFSMs Syntehsis Tool v1.00]%> write_MSFSMs -format afsm_format -dlatchimplementation clk EN data D
+[1;2;34mINFO-TCL: FSMs Verilog Code generated for "-format afsm_format".
+[0m[MSFSMs Syntehsis Tool v1.00]%> write_MSFSMs -format syncmealy_behav
+[1;2;34mINFO-TCL: FSMs Verilog Code generated for "-format syncmealy_behav".
+[0m[MSFSMs Syntehsis Tool v1.00]%> write_MSFSMs -format syncmealy_synth
+[1;2;34mINFO-TCL: FSMs Verilog Code generated for "-format syncmealy_synth".
+[0m[MSFSMs Syntehsis Tool v1.00]%> quit
