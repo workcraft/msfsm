@@ -5,18 +5,16 @@ MSFSMs stands for Multiple Synchronised FSMs.
 #### Research
 
 Our work is based on:
-• [[1] P. M. Mattheakis, C. P. Sotiriou, & P. A. Beerel, "A polynomial time flow for implementing
-free-choice Petri-nets" in 2012 IEEE 30th International Conference on Computer Design (ICCD). IEEE,
-2012, pp. 227-234.](https://ieeexplore.ieee.org/document/6378645)
-• [[2] P. M. Mattheakis, "Logic Synthesis of Concurrent Controller Specification", PhD thesis
-Presentation](https://www.csd.uoc.gr/~pmat/research/Phd.pdf)
-• [[3] P. Kemper, "Linear time algorithm to find a minimal deadlock in a strongly connected
-free-choice net." in International Conference on Application and Theory of Petri Nets. Springer,
-1993, pp. 319-338.](http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.20.7958&rep=rep1&type=pdf)
+
+• [[1] P. M. Mattheakis, C. P. Sotiriou, & P. A. Beerel, "A polynomial time flow for implementing free-choice Petri-nets" in 2012 IEEE 30th International Conference on Computer Design (ICCD). IEEE, 2012, pp. 227-234.](https://ieeexplore.ieee.org/document/6378645)
+
+• [[2] P. M. Mattheakis, "Logic Synthesis of Concurrent Controller Specification", PhD thesis Presentation](https://www.csd.uoc.gr/~pmat/research/Phd.pdf)
+
+• [[3] P. Kemper, "Linear time algorithm to find a minimal deadlock in a strongly connected free-choice net." in International Conference on Application and Theory of Petri Nets. Springer, 1993, pp. 319-338.](http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.20.7958&rep=rep1&type=pdf)
+
 • [[4] P. Kemper, "O(|P||T|)-Algorithm to Compute a Cover of S-components in EFC-nets.", 2004.](http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.45.3734&rep=rep1&type=pdf)
-• [[5] A. Sakellariou, D. Valiantzas, C. Sotiriou, N. Xiromeritis and N. Sketopoulos, "Linear
-Time S-Component Extraction for General Petri Nets," 2019 Panhellenic Conference on Electronics &
-Telecommunications (PACET), Volos, Greece, 2019, pp. 1-6](https://ieeexplore.ieee.org/abstract/document/8956294)
+
+• [[5] A. Sakellariou, D. Valiantzas, C. Sotiriou, N. Xiromeritis and N. Sketopoulos, "Linear Time S-Component Extraction for General Petri Nets," 2019 Panhellenic Conference on Electronics & Telecommunications (PACET), Volos, Greece, 2019, pp. 1-6](https://ieeexplore.ieee.org/abstract/document/8956294)
 
 We basically extended and updated Pavlos' work, and created a closed-source free-ware available for
 the community.
