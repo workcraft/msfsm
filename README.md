@@ -6,15 +6,15 @@ MSFSMs stands for Multiple Synchronised FSMs.
 
 Our work is based on:
 
-• [[1] P. M. Mattheakis, C. P. Sotiriou, & P. A. Beerel, "A polynomial time flow for implementing free-choice Petri-nets" in 2012 IEEE 30th International Conference on Computer Design (ICCD). IEEE, 2012, pp. 227-234.](https://ieeexplore.ieee.org/document/6378645)
+• [1] [P. M. Mattheakis, C. P. Sotiriou, & P. A. Beerel, "A polynomial time flow for implementing free-choice Petri-nets" in 2012 IEEE 30th International Conference on Computer Design (ICCD). IEEE, 2012, pp. 227-234.](https://ieeexplore.ieee.org/document/6378645)
 
-• [[2] P. M. Mattheakis, "Logic Synthesis of Concurrent Controller Specification", PhD thesis Presentation](https://www.csd.uoc.gr/~pmat/research/Phd.pdf)
+• [2] [P. M. Mattheakis, "Logic Synthesis of Concurrent Controller Specification", PhD thesis Presentation](https://www.csd.uoc.gr/~pmat/research/Phd.pdf)
 
-• [[3] P. Kemper, "Linear time algorithm to find a minimal deadlock in a strongly connected free-choice net." in International Conference on Application and Theory of Petri Nets. Springer, 1993, pp. 319-338.](http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.20.7958&rep=rep1&type=pdf)
+• [3] [P. Kemper, "Linear time algorithm to find a minimal deadlock in a strongly connected free-choice net." in International Conference on Application and Theory of Petri Nets. Springer, 1993, pp. 319-338.](http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.20.7958&rep=rep1&type=pdf)
 
-• [[4] P. Kemper, "O(|P||T|)-Algorithm to Compute a Cover of S-components in EFC-nets.", 2004.](http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.45.3734&rep=rep1&type=pdf)
+• [4] [P. Kemper, "O(|P||T|)-Algorithm to Compute a Cover of S-components in EFC-nets.", 2004.](http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.45.3734&rep=rep1&type=pdf)
 
-• [[5] A. Sakellariou, D. Valiantzas, C. Sotiriou, N. Xiromeritis and N. Sketopoulos, "Linear Time S-Component Extraction for General Petri Nets," 2019 Panhellenic Conference on Electronics & Telecommunications (PACET), Volos, Greece, 2019, pp. 1-6](https://ieeexplore.ieee.org/abstract/document/8956294)
+• [5] [A. Sakellariou, D. Valiantzas, C. Sotiriou, N. Xiromeritis and N. Sketopoulos, "Linear Time S-Component Extraction for General Petri Nets," 2019 Panhellenic Conference on Electronics & Telecommunications (PACET), Volos, Greece, 2019, pp. 1-6](https://ieeexplore.ieee.org/abstract/document/8956294)
 
 We basically extended and updated Pavlos' work, and created a closed-source free-ware available for
 the community.
@@ -27,19 +27,19 @@ from State Machines and Marked Graphs to Asymmetric or even General class.
 
 ##### Mandatory Step(s):
 
-  - step #0  : save a Workcraft Petri Net Graph either in .work or .g format (.g is suggested)
-  - step #1  : run *read_graph* TCL command, to load Petri-Net structure into MSFSMs tool
-  - step #2  : run *get_SC_Snets* TCL command, to calculate an S-cover, and obtain an array of
+  - ___step #0___  : save a Workcraft Petri Net Graph either in .work or .g format (.g is suggested)
+  - ___step #1___  : run *read_graph* TCL command, to load Petri-Net structure into MSFSMs tool
+  - ___step #2___  : run *get_SC_Snets* TCL command, to calculate an S-cover, and obtain an array of
               Strongly Connected S-Nets (SC-SNets) for the given Petri-Net
-  - step #3  : run *create_FSMs* TCL command, to implement FSM mapping of SC-SNets and obtain
+  - ___step #3___  : run *create_FSMs* TCL command, to implement FSM mapping of SC-SNets and obtain
               an array of MSFSMs
-  - step #3.5: run *horizontal_collapse_FSMs* TCL command, to implement horizontal state
+  - ___step #3.5___: run *horizontal_collapse_FSMs* TCL command, to implement horizontal state
               collapsing between different FSMs.
                Meaning, the tool compares FSMs with each other in order to check if they are
               equivalent to avoid mapping of redundant state
-  - step #4  : run *synchronise_FSMs* TCL command, to synchronise FSMs together and obtain the
+  - ___step #4___  : run *synchronise_FSMs* TCL command, to synchronise FSMs together and obtain the
               final array of the MSFSMs system
-  - step #5  : run *write_MSFSMs* TCL command, to generate verilog RTL code per FSM and for the
+  - ___step #5___  : run *write_MSFSMs* TCL command, to generate verilog RTL code per FSM and for the
               whole MSFSMs wrapper logic
 
 ##### Optional Steps(s):
@@ -226,13 +226,13 @@ from State Machines and Marked Graphs to Asymmetric or even General class.
        command type: mandatory flow command [step#5]
        synopsis: writes verilog RTL files of MSFSMs system based on the selected format
        description: In total 3 MSFSMs extraction formats are currently available with option “-format”:
-                   • "-syncmealy_behav" (default): extracts 2 Verilog files, 'fsm_behav_mealy.v' and
+                   • "syncmealy_behav" (default): extracts 2 Verilog files, 'fsm_behav_mealy.v' and
                    'msfsm_behav_mealy.v'. The 1st defines the information per each FSM in behavioral RTL
                    and the 2nd instantiates and interconnects the FSMs as a system.
-                   • "-syncmealy_synth": extracts 2 Verilog files, 'fsm_synth_mealy.v' and
+                   • "syncmealy_synth": extracts 2 Verilog files, 'fsm_synth_mealy.v' and
                    'msfsm_synth_mealy.v'. The 1st defines the information per each FSM in synthesisable
                    RTL and the 2nd instantiates and interconnects the FSMs as a system.
-                   • "-afsm_format": extracts 1 AFSM (.afsm) file and 1 Verilog file, 'fsm_afsm.afsm'
+                   • "afsm_format": extracts 1 AFSM (.afsm) file and 1 Verilog file, 'fsm_afsm.afsm'
                    and 'msfsm_afsm.v'. The 1st defines the information per each FSM structurally for an
                    internal CAS Lab tool which generates Asynchronous FSMs, using SR latches for each
                    state and the 2nd instantiates and interconnects the FSMs as a system (contact us for
