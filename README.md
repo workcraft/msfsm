@@ -1,4 +1,5 @@
 ## MSFSMs Tool 2018-2020
+# ![CAS Lab, University of Thessaly, Greece logo](images/CASLab-UTH_logo.png)
 
 MSFSMs stands for Multiple Synchronised FSMs.
 
@@ -24,6 +25,7 @@ proposed methodology, the user is able to calculate S-Cover for all Well-formed 
 from State Machines and Marked Graphs to Asymmetric or even General class.
 
 #### How to run the MSFSMs (Multiple Synchronised FSMs) Tool flow:
+![CAS Lab, University of Thessaly, Greece logo](images/MSFSMs_flowchart_horizontal.v2.png)
 
 ##### Mandatory Step(s):
 
